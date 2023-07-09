@@ -1,4 +1,4 @@
-# Animated Text-Based Captcha
+# Template
 ## Summary
 
 ## Requirements
