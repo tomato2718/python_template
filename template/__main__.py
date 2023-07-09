@@ -5,12 +5,13 @@ from .lib._constants import Path
 from .lib.toolbox import LogTool, Style
 from .lib.toolbox.utils import parse_unknown_args
 
-LOGGER_COLOR = {'debug': Style.FG.BRIGHT_CYAN,
-                'info':'',
-                'warning': Style.FG.YELLOW,
-                'error': Style.FG.RED,
-                'critical': Style(['BOLD'], 'RED'),
-                }
+LOGGER_COLOR = {
+    'debug': Style.FG.BRIGHT_CYAN,
+    'info':'',
+    'warning': Style.FG.YELLOW,
+    'error': Style.FG.RED,
+    'critical': Style(['BOLD'], 'RED'),
+}
 LogTool.set_logger(Path.LOGGING_CONFIG)
 LogTool.colorful_logger(__name__, **LOGGER_COLOR)
 logger = LogTool.get_logger(__name__)
