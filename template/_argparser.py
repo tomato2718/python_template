@@ -25,8 +25,10 @@ def arg_parser() -> argparse.ArgumentParser:
 
     # Program informations
     information = parser.add_argument_group('Program Informations')
-    information.add_argument('--help', '-h',
-                             action='help',
-                             help='Show this help message and exit.')
+    information.add_argument(
+        '--help', '-h',
+        action='help',
+        help='Show this help message and exit.'
+    )
     
     return parser

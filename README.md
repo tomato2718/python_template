@@ -1,52 +1,51 @@
-# 專案名稱
+# Animated Text-Based Captcha
 ## Summary
-- 概要。
 
 ## Requirements
 ### System
-- `docker >= 23.0`
 - `python >= 3.10.10`
 
 ### Python
-- `pyyaml >= 6.0`
+
 
 ## Setup
 ### Installation
-- 部署說明
+- Install with Python pip
 ```sh
-安裝相關指令
+>>> pip install 
 ```
 
-### Configuration
-#### config.py
-- `項目 1`：以條列式說明該項目之作用。
-    - `項目 1.1`：子項目可用階層清單說明。
-- `項目 2`：說明文字。
-
-#### config.yml
-- `項目 A`：不同檔案可使用不同子標題區隔。
-
+- Build Docker Image
+```sh
+>>> mkdir tmp
+>>> pip install -t tmp
+>>> docker build -t 
+```
 
 ## Usage
 ### Start Up
-- 使用 python 執行此專案
-```sh
->>> python -m template
+- Import this Project as a module.
+```py
+
 ```
 
-- 使用 docker 執行此專案
+- Use Python to execute this project.
 ```sh
->>> ./run.sh -h
+
 ```
 
-### Parameters
-參考 `-h` 指令或對應文件。
+- Use Docker to execute this project.
 ```sh
->>> python -m template -h
+
 ```
+
+### Arguments
+#### Requirement 
+
+#### Optional
 
 ## Run the tests
-直接執行專案內 `tests` package 即可。
+- Unit tests
 ```sh
 >>> python -m tests
 ```
@@ -56,3 +55,5 @@
 - `yveschen2718@gmail.com`
 ### Maintainer
 - `yveschen2718@gmail.com`
+
+<!--links-->

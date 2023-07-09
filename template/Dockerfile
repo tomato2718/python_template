@@ -8,5 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt \
     && rm -rf  ./app/log \
     && rm -rf  ./app/conf 
 
-ENTRYPOINT [ "python","-OOm" , "app"]
+ENTRYPOINT ["python", "-OOm", "app"]
 CMD [""]
