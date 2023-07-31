@@ -18,7 +18,7 @@ __author__ = 'yveschen2718@gmail.com'
 __maintainer__ = 'yveschen2718@gmail.com'
 __release__ = '2023/07/31'
 __summary__ = 'Python project template'
-__usage__ = f'''
+__usage__ = '''
 Usage:
     >>> 
     >>> 
