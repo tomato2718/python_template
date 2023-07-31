@@ -9,14 +9,14 @@ __all__ = [
     '__maintainer__',
     '__release__',
     '__summary__',
-    '__usage__'
+    '__usage__',
 ]
 
 __project__ = 'template'
 __version__ = '0.0.0'
 __author__ = 'yveschen2718@gmail.com'
 __maintainer__ = 'yveschen2718@gmail.com'
-__release__ = '2023/07/09'
+__release__ = '2023/07/31'
 __summary__ = 'Python project template'
 __usage__ = f'''
 Usage:

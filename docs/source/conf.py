@@ -1,5 +1,7 @@
 import os, sys
 sys.path.insert(0, os.path.abspath('../..'))
+from template import __about__
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -8,10 +10,10 @@ sys.path.insert(0, os.path.abspath('../..'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Template'
+project = __about__.__project__
 copyright = '2023, tomato2718'
-author = 'tomato2718'
-release = '0.0.0'
+author = __about__.__author__
+release = __about__.__version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -19,6 +21,7 @@ release = '0.0.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinxcontrib.mermaid',
+    'sphinx_copybutton'
 ]
 
 autodoc_default_options = {
@@ -26,15 +29,23 @@ autodoc_default_options = {
     "undoc-members": True,
     "private-members": False
 }
+
 autoclass_content = 'both'
 templates_path = ['_templates']
 exclude_patterns = []
 
-mermaid_init_js = "mermaid.initialize({startOnLoad:true, theme:'neutral'});"
+mermaid_init_js = '''
+mermaid.initialize(
+    {
+        startOnLoad: true,
+        theme: 'neutral'
+    }
+);
+'''
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'furo'
-html_static_path = ['_static']
+# html_static_path = ['_static']
 

@@ -23,8 +23,7 @@ def arg_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
-    # Program informations
-    information = parser.add_argument_group('Program Informations')
+    information = parser.add_argument_group('Program Information')
     information.add_argument(
         '--help', '-h',
         action='help',
