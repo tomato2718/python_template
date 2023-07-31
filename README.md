@@ -12,14 +12,14 @@
 ### Installation
 - Install with Python pip
 ```sh
->>> pip install 
+>>> pip install template-1.0.0-py3-none-any.whl
 ```
 
 - Build Docker Image
 ```sh
 >>> mkdir tmp
->>> pip install -t tmp
->>> docker build -t 
+>>> pip install template-1.0.0-py3-none-any.whl -t tmp
+>>> docker build -t  template:1.0.0 template
 ```
 
 ## Usage
@@ -31,13 +31,15 @@
 
 - Use Python to execute this project.
 ```sh
-
+>>> python -OOm template
 ```
 
 - Use Docker to execute this project.
 ```sh
-
+>>> docker run -it --rm template
 ```
+
+## Features
 
 ### Arguments
 #### Requirement 
